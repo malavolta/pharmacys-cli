@@ -8,6 +8,6 @@ app.get('/*', function(req, res) {
     res.sendFile(path.join(__dirname, 'angular-build', 'index.html'))
 });
 // Start the app by listening on the default Heroku port
-server.listen(8080, () => {
+app.listen(8080, () => {
     console.log(`server listening on port 8080`)
 })
